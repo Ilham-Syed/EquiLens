@@ -63,6 +63,8 @@ EquityLens uses Streamlit for the user interface, FAISS for vector storage, and 
 
 ## Screenshots
 
+### Architecture Diagram
+![Architecture Diagram](Assets/Block%20Diagram.png)
 ### Main Interface
 ![Main Interface](Assets/HomePage.png)
 
