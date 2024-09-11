@@ -63,6 +63,13 @@ if query:
             result=chain({"question":query},return_only_outputs=True)
             st.header("Results")
             st.subheader(result["answer"])
+
+            sources=result.get("sources","")
+            if sources:
+                st.subheader("Sources")
+                sources_list=sources.split("\n")
+                for source in sources_list:
+                    st.write(source)
         except Exception as e:
             st.error("An error occurred while retrieving the results. This may be due to exhaustion of the API limits. Please try again later.")
     else:
